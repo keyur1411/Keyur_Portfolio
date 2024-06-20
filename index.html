@@ -2,26 +2,35 @@
 <html lang="en">
 
 <head>
+
     <link rel="icon" type="image/svg+xml"
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2250%22 fill=%22%230058ff%22></rect><path fill=%22%23fff%22 d=%22M72.15 21.33L72.15 21.33Q74.49 22.50 74.90 25.02Q75.30 27.54 73.59 29.61L73.59 29.61Q72.42 31.23 70.58 31.41Q68.73 31.59 66.84 30.69L66.84 30.69Q64.68 29.70 62.30 29.16Q59.91 28.62 57.30 28.62L57.30 28.62Q52.44 28.62 48.62 30.15Q44.79 31.68 42.09 34.52Q39.39 37.35 38.00 41.22Q36.60 45.09 36.60 49.77L36.60 49.77Q36.60 55.26 38.18 59.31Q39.75 63.36 42.54 66.06Q45.33 68.76 49.11 70.07Q52.89 71.37 57.30 71.37L57.30 71.37Q59.73 71.37 62.16 70.92Q64.59 70.47 66.84 69.30L66.84 69.30Q68.73 68.40 70.58 68.67Q72.42 68.94 73.68 70.56L73.68 70.56Q75.48 72.81 74.99 75.20Q74.49 77.58 72.24 78.66L72.24 78.66Q69.90 79.83 67.43 80.60Q64.95 81.36 62.43 81.77Q59.91 82.17 57.30 82.17L57.30 82.17Q50.82 82.17 45.02 80.10Q39.21 78.03 34.67 73.98Q30.12 69.93 27.51 63.86Q24.90 57.78 24.90 49.77L24.90 49.77Q24.90 42.84 27.29 36.99Q29.67 31.14 34.04 26.87Q38.40 22.59 44.34 20.21Q50.28 17.82 57.30 17.82L57.30 17.82Q61.26 17.82 65.04 18.72Q68.82 19.62 72.15 21.33Z%22></path></svg>" />
     <meta charset="UTF-8">
     <meta http-equiv=“Pragma” content=”no-cache”>
     <meta http-equiv=“Expires” content=”-1″>
     <meta http-equiv=“CACHE-CONTROL” content=”NO-CACHE”>
+
     <!-- Font family -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
     <!-- CSS Stylesheets -->
+
     <link rel="stylesheet" href="css/master.css">
     <title> Portfolio - Keyurkumar Kanjariya</title>
+
 </head>
 
 <body>
-    <header id="he">
+
+    <!-- Header -->
+
+    <header id="Header">
         <div class="container">
-            <nav class="navbar">
+            <nav>
                 <img src="/images/Keyur-removebg-preview.png" class="logo">
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -31,24 +40,88 @@
                     <li><a href="#">Contact Me</a></li>
                 </ul>
             </nav>
-            <div class="he-text">
+            <div class="Header-text">
                 <p>Competative Programmer</p>
                 <h1>Hi, I'm <span>Keyur</span> <br>Kanjariya from Gujarat</h1>
             </div>
         </div>
-
     </header>
 
+    <!-- About ME -->
 
-    <!-- <main class="con" contentEditable>
-        Hi I am keyur
-    </main> -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/img1.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit explicabo voluptates nihil nostrum,
+                        numquam minima corporis ipsa repellat adipisci, culpa minus deserunt cupiditate quod,
+                        necessitatibus unde officiis aperiam ipsam amet eos asperiores? Reiciendis molestiae maiores
+                        inventore autem ratione magnam, possimus eveniet nesciunt quae impedit excepturi optio aliquam
+                        ipsa fuga. Aliquid.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-link" onclick="opentab('experince')">Experince</p>
+                        <p class="tab-link" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>C, C++, HTML5, CSS3, Javascript</li>
+                            <li><span>Area Of Interest</span><br>Competative Programming, Data Structure &
+                                Algorithm, Software development</li>
+                            <li><span>Web development</span><br>Building Websites using HTML5, CSS3, &Javascript</li>
+                            <li><span>Soft Skills</span><br>Leadrship,Teamwork,Marketing,Problem Solving,Adaptability
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experince">
+                        <ul>
+                            <li><span>may 2024-present</span><br>Marketing Head | FMC Weekend 11th edition </li>
+                            <li><span>aug 2023 - nov 2023</span><br>Marketing Executive | FMC Weekend 10th Edition</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-present</span><br>B.tech (Chemical Engineeering) At IIT(BHU) Varanasi</li>
+                            <li><span>2021-2022</span><br>Educational drop for IIT-JEE</li>
+                            <li><span>2019-2021</span><br>CBSE 11th&12th(PCM) class at JNV Jamnagar</li>
+                            <li><span>2018-2019</span><br>CBSE 10th class at JNV Jaamnagar</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 
-<!-- <footer contentEditable>
-    <p class="copyright-text">© Copyright 2023 Keyurkumar Kanjariya</p>
-</footer> -->
-
 <!-- Our codes -->
-<script src="js/main.js"></script>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-link");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+</html>
