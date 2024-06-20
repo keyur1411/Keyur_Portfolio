@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: #748984;
+    color: #fff;
+}
+
+#he {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/img5.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap ;
+}
+.logo{
+    width: 140px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 10px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #0a4839;
+    position: absolute;
+    left: -4px;
+    bottom: -6px;
+    transition: 0.3s;
+}
+nav ul li a:hover::after{
+    
+    width: 100%;
+}
+
+.he-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.he-text h1{
+    margin-top: 20px;
+    font-size: 60px;
+}
+.he-text h1 span{
+    color: #0a4839;
+}
