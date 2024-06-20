@@ -167,40 +167,40 @@ nav ul li a:hover::after {
     display: block;
 }
 
- /* -------------------------------------Achievements-------------------------------------  */
+/* -------------------------------------Achievements-------------------------------------  */
 
-#achievements{
+#achievements {
     padding: 30px 0;
 }
 
-.achievements-list{
+.achievements-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
 
-.achievements-list div{
+.achievements-list div {
     background: #546360;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
     border-radius: 10px;
-    transition: background-color 0.6s,transform 0.5s;
+    transition: background-color 0.6s, transform 0.5s;
 }
 
-.achievements-list div i{
+.achievements-list div i {
     font-size: 50px;
     margin-bottom: 30px;
 }
 
-.achievements-list div h2{
+.achievements-list div h2 {
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
 }
 
-.achievements-list div a{
+.achievements-list div a {
     display: inline-block;
     text-decoration: none;
     color: #fff;
@@ -208,7 +208,94 @@ nav ul li a:hover::after {
     margin-top: 20px;
 }
 
-.achievements-list div:hover{
+.achievements-list div:hover {
     background-color: #0a4839;
     transform: translateY(-15px);
+}
+
+/* -------------------------------------------portfolio------------------------------------------- */
+
+#portfolio {
+    padding: 50px 0;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.project {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(#74898460, #0a4839);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: 0.5s;
+}
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a {
+    margin-top: 20px;
+    color: #0a4839;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    width: 60px;
+    background: #fff;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.project img:hover {
+    transform: scale(1.5);
+}
+
+.project:hover .layer {
+    height: 100%;
+}
+
+.btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1.5px solid #0a4839;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    background-color: #0a4839;
 }
