@@ -1,5 +1,7 @@
 /* ------------------------------------CSS for All Body----------------------------------------*/
-
+html{
+    scroll-behavior: smooth;
+}
 * {
     padding: 0;
     margin: 0;
@@ -396,7 +398,7 @@ nav .fa-solid {
 
 @media only screen and (max-width: 600px) {
     #Header {
-        background-image: url(../images/Screenshot_2024-06-21_083359-removebg-preview.png);
+        background-image: url(../images/phone1.png);
     }
 
     .Header-text {
@@ -473,4 +475,10 @@ nav .fa-solid {
     .copyright {
         font-size: 14px;
     }
+}
+
+#msg{
+    color: #0a4839;
+    margin-top: -40px;
+    display: block;
 }

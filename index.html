@@ -38,11 +38,11 @@
             <nav>
                 <img src="/images/logo.png" class="logo">
                 <ul id="sidemenu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Achievements</a></li>
-                    <li><a href="#">Contact Me</a></li>
+                    <li><a href="#Header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
                     <i class="fa-solid fa-x" onclick="closemenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
@@ -113,7 +113,7 @@
 
     <!-- ----------------------------------------------portfolio---------------------------------------------- -->
 
-    <div class="portfolio">
+    <div id="portfolio">
         <div class="container">
             <h1 class="sub-title">My Projects</h1>
             <div class="project-list">
@@ -196,12 +196,13 @@
                     <a href="images/resume.pdf" download class="btn btn2">Downnload My Resume</a>
                 </div>
                 <div class="contact-right">
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email Id" required>
-                        <textarea name="message" rows="6" placeholder="Write Your Message Here" required></textarea>
+                        <input type="email" name="Email" placeholder="Your Email Id" required>
+                        <textarea name="Message" rows="6" placeholder="Write Your Message Here" required></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
+                    <span id="msg"></span>
                 </div>
             </div>
         </div>
